@@ -23,10 +23,9 @@ public class Pizza extends GeneralPathWrapper implements Shape
     /**
        Constructor
        
-       @param x x coord of lower left corner of house
-       @param y y coord of lower left corner of house
-       @param width
-       @param height of house (including first story and second story)
+       @param x x coord of pizza
+       @param y y coord of pizza
+       @param radius radius of pizza
     */
     public Pizza(double x, double y, double radius)
     {
@@ -38,8 +37,8 @@ public class Pizza extends GeneralPathWrapper implements Shape
         // way.
 
 	Ellipse2D.Double crust =
-	    new Ellipse2D.Double (x - radius, y - radius,   /* upper left corner of bounding box */
-				  radius * 2, radius * 2); /* width and height are double the radius */
+	    new Ellipse2D.Double (x - radius, y - radius, 
+				  radius * 2, radius * 2); 
 	Ellipse2D.Double innerPizza =
 	    new Ellipse2D.Double (x - radius + 0.1*radius, y - radius + 0.1*radius,
 				  radius * 1.8, radius *1.8);

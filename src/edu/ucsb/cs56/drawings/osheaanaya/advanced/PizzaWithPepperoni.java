@@ -14,11 +14,11 @@ import java.awt.geom.Ellipse2D;
 public class PizzaWithPepperoni extends Pizza implements Shape
 {
     /**
-     * Constructor for objects of class CoffeeCup
+     * Constructor 
      */
     public PizzaWithPepperoni(double x, double y, double radius)
     {
-	// construct the basic house shell
+	// construct the basic pizza shell
 	super(x,y,radius);
 	
 	// get the GeneralPath that we are going to append stuff to
